@@ -140,7 +140,7 @@ class NewsBlogFeaturedArticlesPlugin(NewsBlogPlugin):
     def render(self, context, instance, placeholder):
         request = context.get('request')
         context['instance'] = instance
-        context['articles_list'] = instance.get_articles(request)
+        context['article_list'] = instance.get_articles(request)
         return context
 
 
